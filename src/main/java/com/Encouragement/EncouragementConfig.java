@@ -1,19 +1,19 @@
-package com.example;
+package com.Encouragement;
 
 import net.runelite.client.config.Config;
 import net.runelite.client.config.ConfigGroup;
 import net.runelite.client.config.ConfigItem;
 
-@ConfigGroup("example")
-public interface ExampleConfig extends Config
+@ConfigGroup("encouragement")
+public interface EncouragementConfig extends Config
 {
 	@ConfigItem(
 		keyName = "greeting",
-		name = "Welcome Greeting",
-		description = "The message to show to the user when they login"
+		name = "Frequency",
+		description = "How frequent will the messages pop up"
 	)
 	default String greeting()
 	{
-		return "Hello";
+		return "This is a test";
 	}
 }
